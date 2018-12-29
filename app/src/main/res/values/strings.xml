@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">huit3rium</string>
+    <string name="balise1">Balise 1</string>
+    <string name="balise2">Balise 2</string>
+    <string name="balise3">Balise 3</string>
+    <string name="balise4">Balise 4</string>
+    <string name="ok">OK</string>
+    <string name="select_balise">Sélectionner votre balise</string>
+    <string name="select_jeune">Renseigner le numéro de plaque de cadre du jeune</string>
+    <string name="plaque">Numéro de plaque</string>
+    <string name="lettre">Lettre du club</string>
+    <string name="zone1">Zone 1</string>
+    <string name="zone2">Zone 2</string>
+
+</resources>
