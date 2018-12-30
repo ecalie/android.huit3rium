@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".controleur.ResultatActivity">
+    tools:context=".controleur.ResultatActivity"
+    android:gravity="center_vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -27,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
         android:text="@string/zone1"
         android:textSize="20sp" />
 
@@ -36,8 +37,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/zone2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/resultat_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="@string/ok"
         android:textSize="20sp" />
 
 </LinearLayout>

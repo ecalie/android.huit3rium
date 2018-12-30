@@ -11,7 +11,8 @@
         android:layout_height="0dp"
         android:layout_weight="3"
         android:gravity="center"
-        android:text="@string/select_balise" />
+        android:text="@string/select_balise"
+        android:textSize="20sp"/>
 
     <RadioGroup
         android:layout_width="match_parent"

@@ -1,5 +1,8 @@
 package com.ecalie.android.huit3rium.controleur;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +33,20 @@ public class ChoixBaliseActivity extends AppCompatActivity {
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (balise1.isChecked() || balise2.isChecked() || balise3.isChecked() || balise4.isChecked())
+                    startActivity(new Intent(ChoixBaliseActivity.this, SelectJeuneActivity.class));
+                else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(ChoixBaliseActivity.this);
+                    builder.setTitle("Erreur")
+                            .setMessage("Sélectionner une balise")
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                }
+                            })
+                            .create()
+                            .show();
+                }
 
             }
         });
